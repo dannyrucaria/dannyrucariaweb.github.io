@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+This coding is authentic
+Made by: Akmal Hakim Azuan
+-->
+
+<!-- This is the basic head of my website! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Rucaria's Tavern</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <style>
+  input[type=text], select {
+  width: 100%;
+  background-color:#d9d9d9;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+  input[type=text]:hover {
+  background-color:white;
+  }
+  
+  input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+  input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+  .form{
+  border-radius: 5px;
+  background-image: url("feedbackcover.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:70px 90px;
+  padding: 20px;
+  height: 1100px;
+}
+  
+  body {
+  position:relative;
+  background-image: url("clouds.gif");
+  background-repeat: repeat-y;
+  background-size: cover;
+  text-align:center;
+  height:1400px;
+}
+
+  .container {
+  position: relative;
+  text-align: center;
+  display:flex;
+  color: black;
+  top:50px;
+  height:90px;
+}
+.centered {
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rcorners3{
+  border-radius: 25px;
+  background: black;
+  width:520px;
+}
+  </style>
+</head>
+
+<body>
+<nav id="nav" style="top:0px;">
+		<div class ="iconlogo">
+	    <a href="https://www.youtube.com/watch?v=1TfbiDo7N4k"><img src="dilucopen.png" style="width:50px;height:50px;"></a>
+	    </div>
+	    <div class ="logo">Danny Rucaria's Website!</div>
+		<ul> 
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+            <li><a href="aboutme.html" onclick="toggle()">About Me</a></li>
+            <li><a href="portfoliome.html" onclick="toggle()">Portfolio</a></li>
+            <li><a class="active2" href="feedbackme.html"onclick="toggle()">Feedback</a></li>
+			<li><div class="dropdown">
+            <div class="dropbtn">More Options
+            <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+            <a href="favoriteme.html" onclick="toggle()">Favorites</a>
+            <a href="achieveme.html" onclick="toggle()">Achievements</a>
+            <a href="goalme.html" onclick="toggle()">Goals/Targets</a>
+			</div>
+			</div>
+			</li>
+			<div class = "hiders">
+			<li><a href="favoriteme.html">Favorites</a></li>
+            <li><a href="achieveme.html">Achievements</a></li>
+            <li><a href="goalme.html">Goals/Targets</a></li>
+			</div>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+</nav>
+	
+	<script type="text/javascript">
+		function toggle(){
+			var nav = document.getElementById("nav")
+			nav.classList.toggle('active')
+		}
+		
+		function mypopup(){
+	    confirm("Anda pasti maklumat adalah benar? jika ya, klik OK.");
+	    }
+	</script>
+
+<audio autoplay>
+<source src = "">
+</audio>
+<div class="container">
+  <div class="form">
+  <form method="POST" action="feedbackus.php">
+    <h2 style="color:#ffd2ff;font-size:40px;font-weight: bold;text-shadow: 1px 1px 1px black; height:50px;font-family: 'Cookie', sans-serif;">🔔 <u>FEEDBACK</u> 🔔<h2>
+    <label for="fname" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."required>
+
+    <label for="lname" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+	
+	<label for="em" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">E-mail</label>
+    <input type="text" id="em" name="email" placeholder="Your e-mail.." required>
+    
+	<label for="radio" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Rate my website!</label>
+	<br>
+	<div style = "display:flex;float:left;text-align:center;margin:0px 350px;padding:0px 100px;">
+	<input type="radio" id="html" name="fav_language" value="HTML">
+	<br>
+    <label for="1" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Needs more... updates?</label><br>
+    
+	<input type="radio" id="css" name="fav_language" value="CSS">
+    <br>
+	<label for="2" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Yea it's fiiiine.</label><br>
+    
+	<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <br>
+	<label for="3" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Great!</label>
+	
+	<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <br>
+	<label for="4"style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Amazing!</label>
+	
+	<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <br>
+	<label for="5" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Do you work at Google?</label>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<label for="genders" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Gender</label>
+	 <select id="genders" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="preferred">Pondan/Tomboy/Lain-lain</option>
+        </select>
+	
+     <label for="relation" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Relationship</label>
+	 <select id="relation" name="relation">
+          <option value="friend">Friend</option>
+          <option value="family">Family</option>
+          <option value="interviewer">Interviewer</option>
+		  <option value="lecturer">Lecturer</option>
+     </select>
+	 <br>
+	 <br>
+	
+	<ul style = "display:flex;float:left;text-align:center;margin:0px 350px;padding:0px 100px;" >
+	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;"> I have Whatsapp</label>
+	</label>
+	
+	<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;"> I have Instagram</label>
+    </label>
+	
+	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;"> I have Snapchat</label>
+    </label>
+    </ul>
+	<br>
+	<br>
+	<br>
+	<br>
+    <label for="feed" style="color:white;font-size:20px;font-weight: bold;font-style: Italic;text-shadow: 1px 1px 1px black; height:50px;">Your Feedback?</label>
+    <textarea type="text" id="feed" name="feedback" placeholder="What do i think...?" style="height:100px;" required></textarea>
+    </select>
+	
+    <input type="submit" value="Submit" onclick="mypopup()">
+  </form>
+  </div> 
+</div>
+</body>
+<div class="footer-dark" style = "bottom:0;">
+<footer>
+  <div class="container2">
+    <div class="col item social">
+    <a href="https://www.facebook.com/akmalhakim.azuan/."><i class="icon ion-social-facebook"></i></a>
+	<a href="https://www.youtube.com/channel/UC42rf_AnOBWTMbw9Aebh58g"><i class="icon ion-social-youtube"></i></a>
+	<a href="https://www.instagram.com/danny_rucaria/"><i class="icon ion-social-instagram"></i></a>
+	</div>      
+    </div>
+	<p class="copyright">Danny Rucaria © 2022</p>
+</footer>
+</div>
+</html>

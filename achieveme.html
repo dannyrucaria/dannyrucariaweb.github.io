@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+This coding is authentic
+Made by: Akmal Hakim Azuan
+-->
+
+<!-- This is the basic head of my website! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Rucaria's Tavern</title>
+  <link rel="stylesheet" href="bodystyle.css">
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="footer2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <style>
+  body {
+  position: relative;
+  min-height:100vh;
+  height:900px;
+  background-image: url("dreamsbg.gif");
+  background-size: cover;
+  text-align:center;
+  overflow-y: scroll;
+  padding-bottom: 58px;
+  min-height: 100vh;
+  }
+  
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  top:100px;
+}
+  </style>
+<body>
+<nav id="nav">
+		<div class ="iconlogo">
+	    <a href="https://www.youtube.com/watch?v=1TfbiDo7N4k"><img src="dilucopen.png" style="width:50px;height:50px;"></a>
+	    </div>
+	    <div class ="logo">Danny Rucaria's Website!</div>
+		<ul> 
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+            <li><a href="aboutme.html" onclick="toggle()">About Me</a></li>
+            <li><a href="portfoliome.html" onclick="toggle()">Portfolio</a></li>
+            <li><a href="feedbackme.html"onclick="toggle()">Feedback</a></li>
+			<li><div class="dropdown">
+            <div class="dropbtn">More Options
+            <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+            <a href="favoriteme.html" onclick="toggle()">Favorites</a>
+            <a class="active2" href="achieveme.html" onclick="toggle()">Achievements</a>
+            <a href="goalme.html" onclick="toggle()">Goals/Targets</a>
+			</div>
+			</div>
+			</li>
+			<div class = "hiders">
+			<li><a href="favoriteme.html">Favorites</a></li>
+            <li><a href="achieveme.html">Achievements</a></li>
+            <li><a href="goalme.html">Goals/Targets</a></li>
+			</div>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+</nav>
+	<script type="text/javascript">
+		function toggle(){
+			var nav = document.getElementById("nav")
+			nav.classList.toggle('active')
+		}
+	</script>
+	
+<div class="container">
+	<div style = "position:relative;border-radius:15px;background-image:url(achievebg.gif);background-size:800px 600px;width:1450px;height:600px;padding:15px; left:50px;">
+    <div style = "position:relative;border-radius:15px;background-color:white;background-size:800px 600px;width:1415px;height:570px;">
+	<br>
+	<h1 style="font-size:60px;color:white;text-shadow: 2px 2px 5px black;">🏆 <u>Achievements</u> 🏆<h1>
+	<h2 style="font-size:20px;color:black;text-shadow: 2px 2px 5px red;">In the portfolio, I have already stated my achievements, but for your enjoyment, here are some simple stories:</h2>
+	<pre style="font-size:20px;color:black;text-shadow: 2px 2px 5px red; text-align:left;">
+
+   💾 1. Gained experience of making my own websites.
+   🥇 2. Fought in a few taekwondo circuits, earning 3rd place for Heavy league sparring.
+   📸 3. Obtained records of designing and editing medias, now as a form of hobby.
+   ✈️ 4. Traveled to the United Kingdom, France, Portugal, and Thailand during my young age.
+   📺 5. As for games, I've had a beginners hand at making a game through unity, but never finished.
+   🏀 6. Participated into many sports such as Archery, Football, Bowling, Volleyball and Basketball. 
+   🏋️‍ 7. Even in mid-extreme sports: Parasailing, Flying Fox, Army Bootcamps, Camping, Ocean-Fishing.
+   🎧 8. Made my own music! Yes, it's on my other youtube channel <a href="https://www.youtube.com/channel/UC42rf_AnOBWTMbw9Aebh58g">here</a>
+   🔨 9. Became a class representative and treasurer, always active and supportive!
+   📱 10. Experienced working at my father's business prior to putting effort on getting my own phone.    
+	</pre>
+	</div>
+	</div>
+</div>
+
+<img src = "" style="width:; height:;">
+
+</body>
+
+<div class="footer-dark">
+<footer>
+  <div class="container2">
+    <div class="col item social">
+    <a href="https://www.facebook.com/akmalhakim.azuan/."><i class="icon ion-social-facebook"></i></a>
+	<a href="https://www.youtube.com/channel/UC42rf_AnOBWTMbw9Aebh58g"><i class="icon ion-social-youtube"></i></a>
+	<a href="https://www.instagram.com/danny_rucaria/"><i class="icon ion-social-instagram"></i></a>
+	</div>      
+    </div>
+	<p class="copyright">Danny Rucaria © 2022</p>
+</footer>
+</div>
+</html>

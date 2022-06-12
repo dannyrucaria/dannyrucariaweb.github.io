@@ -1,0 +1,101 @@
+/* All Google Font Styles I used! */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans&display=swap');
+
+/* Body Coding starts here! */
+body {
+	margin:0;
+	line-height: 1.5;
+}
+
+* {
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Cookie', sans-serif;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 15px;
+	font-size:40px;
+}
+
+h2 {
+	font-family: 'open-sans', sans-serif;
+	font-size:20px;
+}
+
+/* Video Background Coding starts here! */
+.full-screen {
+	height: 110vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 0px;
+	width:100%;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 850px;
+	overflow: hidden;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: -5;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+/* Video Background Coding ends here! */
+
+/* Content Coding starts here! */
+.content {
+	z-index: 2;
+	color: red;
+	text-shadow: 2px 2px black;
+}
+/* Content Coding ends here! */
+ 
+ /* Audio Coding starts here! */
+.audio{
+	align-items: center;
+}
+/* Audio Coding ends here! */
+/* Body Coding ends here! */
+/* Extras Coding starts here! */
+.rcorners1{
+  border-radius: 25px;
+  background: white;
+  width:500px;
+}
+
+.rcorner2{
+  position: relative;
+  top: 90px;
+  border-radius: 25px;
+  background: white;
+  width:100%;
+}
+
+/* Extras Coding starts here! */

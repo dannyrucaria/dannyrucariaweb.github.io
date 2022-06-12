@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+This coding is authentic
+Made by: Akmal Hakim Azuan
+-->
+
+<!-- This is the basic head of my website! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Rucaria's Tavern</title>
+  <link rel="stylesheet" href="bodystyle.css">
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="footer2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <style>
+  body {
+  position: relative;
+  min-height:100vh;
+  height:900px;
+  background-image: url("goalbg.gif");
+  background-size: cover;
+  text-align:center;
+  overflow-y: scroll;
+  padding-bottom: 58px;
+  min-height: 100vh;
+  }
+  
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  top:100px;
+}
+
+.yelan1 {
+  position:fixed;
+  display:flex;
+  left:10px;
+  bottom:0;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+
+.yelan1 .yelan{
+  display:flex;
+  left:10px;
+  bottom:0;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+
+.playername{
+   position:fixed;
+   display:flex;
+   text-align:center;
+   left:70px;
+   bottom:120px;
+   z-index:1000;
+}
+  </style>
+<body>
+<nav id="nav">
+		<div class ="iconlogo">
+	    <a href="https://www.youtube.com/watch?v=1TfbiDo7N4k"><img src="dilucopen.png" style="width:50px;height:50px;"></a>
+	    </div>
+	    <div class ="logo">Danny Rucaria's Website!</div>
+		<ul> 
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+            <li><a href="aboutme.html" onclick="toggle()">About Me</a></li>
+            <li><a href="portfoliome.html" onclick="toggle()">Portfolio</a></li>
+            <li><a href="feedbackme.html"onclick="toggle()">Feedback</a></li>
+			<li><div class="dropdown">
+            <div class="dropbtn">More Options
+            <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+            <a href="favoriteme.html" onclick="toggle()">Favorites</a>
+            <a href="achieveme.html" onclick="toggle()">Achievements</a>
+            <a class="active2" href="goalme.html" onclick="toggle()">Goals/Targets</a>
+			</div>
+			</div>
+			</li>
+			<div class = "hiders">
+			<li><a href="favoriteme.html">Favorites</a></li>
+            <li><a href="achieveme.html">Achievements</a></li>
+            <li><a href="goalme.html">Goals/Targets</a></li>
+			</div>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+</nav>
+	<script type="text/javascript">
+		function toggle(){
+			var nav = document.getElementById("nav")
+			nav.classList.toggle('active')
+		}
+	</script>
+	
+<div class="container">
+	<div style = "position:relative;border-radius:15px;background-image:url(movingborder.gif);background-size:800px 600px;width:800px;height:600px;padding:15px; left:50px;">
+    <br>
+	<h1 style="font-size:60px;color:black;text-shadow: 2px 2px 5px red;">🎯 <u>My Goals/Targets!</u> 🎯</h1>
+	<br>
+	<h2 style="font-size:20px;color:black;text-shadow: 2px 2px 5px #555555;">Down below are my lists of goals that I want to do and achieve;-</h2>
+	<pre style="font-size:20px;color:black;text-shadow: 2px 2px 5px #555555; text-align:left;">
+
+      📚 1. Finishing up my studies.
+      ✨ 2. Publish and direct my own books/series.
+      🗿 3. Meet up with celebrities!
+      🚲 4. Purchase myself an FZ150i Bike and a house.
+      💖 5. Start a family, hopefully.
+	</pre>
+	<h2 style="font-size:20px;color:black;text-shadow: 2px 2px 5px red;">And now, if you have read/checked all my content, <br> consider leaving a review down below!</h2>
+	<a href="https://www.youtube.com/watch?v=wnedkVrgFF0"><button style ="padding: 16px 32px;text-align: center;background-color:red;margin: 4px 2px;cursor: pointer;color:white;">To the feedback!</button></a>
+	<h2 style="font-size:20px;color:black;text-shadow: 2px 2px 5px red;">Trust me, it's not a troll link 😘</h2>
+    </div>
+</div>
+
+<div class = "playername">
+<h1 style="font-size:35px;color:blue;text-shadow: 2px 2px 5px black;">Yelan</h1>
+</div>
+<div class = "yelan1" id = "yelan">
+    <div class = "yelan">
+    <img src = "yelandream.png">
+	</div>
+</div>
+</body>
+
+<div class="footer-dark">
+<footer>
+  <div class="container2">
+    <div class="col item social">
+    <a href="https://www.facebook.com/akmalhakim.azuan/."><i class="icon ion-social-facebook"></i></a>
+	<a href="https://www.youtube.com/channel/UC42rf_AnOBWTMbw9Aebh58g"><i class="icon ion-social-youtube"></i></a>
+	<a href="https://www.instagram.com/danny_rucaria/"><i class="icon ion-social-instagram"></i></a>
+	</div>      
+    </div>
+	<p class="copyright">Danny Rucaria © 2022</p>
+</footer>
+</div>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+This coding is authentic
+Made by: Akmal Hakim Azuan
+-->
+
+<!-- This is the basic head of my website! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Rucaria's Tavern</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+
+<!-- Contains all the divs for video background, audio controls, navigations and more! -->
+<body>
+<!-- Navigation starts here -->
+	<nav id="nav">
+		<div class ="iconlogo">
+	    <a href="https://www.youtube.com/watch?v=1TfbiDo7N4k"><img src="dilucopen.png" style="width:50px;height:50px;"></a>
+	    </div>
+	    <div class ="logo">Danny Rucaria's Website!</div>
+		<ul> 
+			<li><a class="active2" href="index.html" onclick="toggle()">Home</a></li>
+            <li><a href="aboutme.html" onclick="toggle()">About Me</a></li>
+            <li><a href="portfoliome.html" onclick="toggle()">Portfolio</a></li>
+            <li><a href="feedbackme.html"onclick="toggle()">Feedback</a></li>
+			<li><div class="dropdown">
+            <div class="dropbtn">More Options
+            <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+            <a href="favoriteme.html" onclick="toggle()">Favorites</a>
+            <a href="achieveme.html" onclick="toggle()">Achievements</a>
+            <a href="goalme.html" onclick="toggle()">Goals/Targets</a>
+			</div>
+			</div>
+			</li>
+			<div class = "hiders">
+			<li><a href="favoriteme.html">Favorites</a></li>
+            <li><a href="achieveme.html">Achievements</a></li>
+            <li><a href="goalme.html">Goals/Targets</a></li>
+			</div>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+	</nav>
+	
+	<script type="text/javascript">
+		function toggle(){
+			var nav = document.getElementById("nav")
+			nav.classList.toggle('active')
+		}
+	</script>
+  </div>
+<!-- And ends here --> 
+
+<!-- The video background starts here! -->
+<section class="full-screen">
+    <div class="video-container">
+        <video src="bgvideo.mp4" autoplay muted loop>
+		</video>
+    </div>
+<!-- And ends here! -->
+
+<!-- Over here, I start my contents! -->	
+    <div class="content">
+	    <a href="https://genshin-impact.fandom.com/wiki/Diluc"><img src="Favonious.png" style="width:150px;height:150px;"></a>
+		    <div class="rcorners1">
+			<h1>Welcome To Danny Rucaria's Tavern</h1>
+			</div>
+			<br><br><br><br><br><br><br><br>
+			<div class="rcorner2">
+			<h2>Owner: Danny Rucaria</h2>
+		    <h2>Music? Press the button below!</h2>
+	    <div class="audio">
+            <audio controls autoplay>
+            <source src="soundbg.mp3" type="audio/mp3">
+	        </audio>
+		</div>
+             </div>			
+	</div>
+<!-- Here ends my contents! -->	
+</section>
+</body>
+<!-- Below are my footers! -->
+<div class="footer-dark">
+<footer>
+  <div class="container">
+    <div class="col item social">
+    <a href="https://www.facebook.com/akmalhakim.azuan/."><i class="icon ion-social-facebook"></i></a>
+	<a href="https://www.youtube.com/channel/UC42rf_AnOBWTMbw9Aebh58g"><i class="icon ion-social-youtube"></i></a>
+	<a href="https://www.instagram.com/danny_rucaria/"><i class="icon ion-social-instagram"></i></a>
+	</div>      
+    </div>
+	<p class="copyright">Danny Rucaria © 2022</p>
+</footer>
+</div>
+<!-- Where Footer Ends! -->
+
+</html>

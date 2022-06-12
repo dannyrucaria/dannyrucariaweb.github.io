@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+This coding is authentic
+Made by: Akmal Hakim Azuan
+-->
+
+<!-- This is the basic head of my website! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Rucaria's Tavern</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="footer2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <style>
+  body {
+  position: relative;
+  min-height:100vh;
+  height:3000px;
+  background-image: url("portraitbg.jpg");
+  background-size: cover;
+  text-align:center;
+  overflow-y: scroll;
+  padding-bottom: 58px;
+  }
+  
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  top:50px;
+}
+
+.centered {
+  position: absolute;
+  margin-top: 950px;
+  margin-left:50%;
+  margin-right:auto;
+  max-width: 800px;
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+  position: absolute;
+  width: 55vw;
+  margin-left:auto;
+  margin-right:auto;
+  top:2100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rcorners3{
+  border-radius: 25px;
+  background: black;
+  z-index:10;
+}
+
+.bopcat {
+  position:fixed;
+  display:flex;
+  left:10px;
+  bottom:0;
+  width:150px;
+  height:150px;
+  z-index:1000;
+  cursor: pointer;
+}
+
+.bopcat .bopcat1{
+  display:flex;
+  left:10px;
+  bottom:0;
+  width:150px;
+  height:150px;
+  z-index:1000;
+  cursor: pointer;
+}
+
+.bopcat.activated .bopcat1{
+   display:none;
+}
+
+.bopcat .bopcat2{
+   display:none;
+}
+
+.bopcat.activated .bopcat2{
+   display:flex;
+   left:10px;
+   bottom:0;
+   width:150px;
+   height:150px;
+   z-index:1000;
+   cursor: pointer;
+}
+
+.playername{
+   position:fixed;
+   display:flex;
+   left:10px;
+   bottom:120px;
+   z-index:1000;
+}
+  </style>
+</head>
+
+<body>
+<nav id="nav">
+		<div class ="iconlogo">
+	    <a href="https://www.youtube.com/watch?v=1TfbiDo7N4k"><img src="dilucopen.png" style="width:50px;height:50px;"></a>
+	    </div>
+	    <div class ="logo">Danny Rucaria's Website!</div>
+		<ul> 
+			<li><a href="index.html" onclick="toggle()">Home</a></li>
+            <li><a class="active2" href="aboutme.html" onclick="toggle()">About Me</a></li>
+            <li><a href="portfoliome.html" onclick="toggle()">Portfolio</a></li>
+            <li><a href="feedbackme.html"onclick="toggle()">Feedback</a></li>
+			<li><div class="dropdown">
+            <div class="dropbtn">More Options
+            <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+            <a href="favoriteme.html" onclick="toggle()">Favorites</a>
+            <a href="achieveme.html" onclick="toggle()">Achievements</a>
+            <a href="goalme.html" onclick="toggle()">Goals/Targets</a>
+			</div>
+			</div>
+			</li>
+			<div class = "hiders">
+			<li><a href="favoriteme.html">Favorites</a></li>
+            <li><a href="achieveme.html">Achievements</a></li>
+            <li><a href="goalme.html">Goals/Targets</a></li>
+			</div>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+</nav>
+	
+	<script type="text/javascript">
+		function toggle(){
+			var nav = document.getElementById("nav")
+			nav.classList.toggle('active')
+		}
+		
+		function play(){
+            var audio = document.getElementById("dilucaudio");
+            audio.play();
+        }
+		
+		function toggle2(){
+			var bopcat = document.getElementById("bopcat");
+			bopcat.classList.toggle('activated');
+		}
+	</script>
+	 
+<div class="container" style = "display:flex;">
+    <img src="border.png" style="width:100%;height:2800px;display:flex;">
+    <div class="centered">
+	    <img src="aboutdiluc.png" style="width:300px;height:300px;border-radius: 100px;background-image:url(bgimage.gif);cursor: pointer;" onclick="play()">
+		<audio id="dilucaudio" src="dilucaudio.mp3" ></audio>
+	    <h1 style="font-size:4vw;color:white;text-shadow: 2px 2px 5px black;">💝 <u>About me</u> 💝<h1>
+    <div class="about1" style="flex-direction:column;width:55vw;margin-left: auto;margin-right: auto;">	
+        <div class="rcorners3">
+	        <div style="float: left;padding:10px 20px">
+	        <img src="dilucicon.png" style="width:8vw;">
+	        </div>
+	    <pre style="font-size:2vw;color:white;text-shadow: 2px 2px 5px red; display:flex; max-width:100px;max-height:200px;">
+
+Name       : Akmal Hakim Bin Azuan
+Birthday   : 12th July            
+Alias      : Danny Rucaria        
+Occupation : Student              
+	    </pre>
+	    </div>
+    </div>
+	    <br>
+        <h1 style="font-size:4vw;color:white;text-shadow: 2px 2px 5px black;">✨ <u>Author's Notes</u> ✨<h1>
+		<div style="font-size:3vw;border-radius:25px;background:white;flex-direction: column;width: 55vw;margin-left: auto;margin-right: auto;padding:15px;text-shadow: 2px 2px 7px red;">
+		 <img src="romantic.png" style="width: 30vw;">
+	     <p>Greetings, visitors of my website! I will briefly take my time to appreciate you coming here!</p>
+		 <br>
+		 <p>Most people would call me Danny Rucaria, my real name is Akmal Hakim.</p>
+		 <p>This year, 2022, I am already 20 years old!</p>
+		 <br>
+		 <p>As a young adult, I hope to catch up my studies and press on with my future planned works!</p>
+		 <br>
+		</div>
+    </div>
+
+	<div class="centered2">
+	<h1 style="font-size:4vw;color:white;text-shadow: 2px 2px 5px black;">💽 <u>Past Experience/Memories</u> 💽<h1>
+	<br>
+	<iframe src="https://www.youtube.com/embed/XMqObCYZ_hs" width="820" height="515" controls></iframe>
+    </div>
+</div>
+
+<div class = "playername">
+<h1 style="font-size:35px;color:#0cff0c;text-shadow: 2px 2px 5px black;">Iman Ucop's Cat</h1>
+</div>
+<div class = "bopcat" id = "bopcat" onclick="toggle2()">
+    <div class = "bopcat1">
+    <img src = "bop1.png">
+	</div>
+	<div class = "bopcat2">
+    <img src="bop2.png">
+    </div>
+</div>
+</body>
+
+<div class="footer-dark">
+<footer>
+  <div class="container2">
+    <div class="col item social">
+    <a href="https://www.facebook.com/akmalhakim.azuan/."><i class="icon ion-social-facebook"></i></a>
+	<a href="https://www.youtube.com/channel/UC42rf_AnOBWTMbw9Aebh58g"><i class="icon ion-social-youtube"></i></a>
+	<a href="https://www.instagram.com/danny_rucaria/"><i class="icon ion-social-instagram"></i></a>
+	</div>      
+    </div>
+	<p class="copyright">Danny Rucaria © 2022</p>
+</footer>
+</div>
+</html>
